@@ -1,7 +1,12 @@
+import { Link } from 'react-router-dom'
+
+import { SearchInput } from './SearchInput'
+
 export function Header() {
   return (
     <div>
-      <h1>Header</h1>
+      <Link to="/">Home</Link>
+      <SearchInput />
     </div>
   )
 }
