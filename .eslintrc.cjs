@@ -24,16 +24,13 @@ module.exports = {
         groups: [
           // Side effect imports.
           ['^\\u0000'],
-          // Packages.
-          // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
-          ['^@?\\w'],
-          // Internal MMS packages.
-          ['^(@mms)(/.*|$)'],
+          // Third-party packages.
+          ['^\\w'],
           // Absolute imports.
-          // Anything not matched in another group.
           ['^'],
+          // Custom path aliases.
+          ['^@?\\w'],
           // Relative imports.
-          // Anything that starts with a dot.
           ['^\\.'],
         ],
       },

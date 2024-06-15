@@ -1,6 +1,6 @@
 import { LoaderFunctionArgs } from 'react-router-dom'
 
-import { searchPackages } from '../../api/queries/searchPackages'
+import { searchPackages } from '@api/queries/searchPackages'
 
 export async function searchLoader({ request }: LoaderFunctionArgs) {
   const url = new URL(request.url)
