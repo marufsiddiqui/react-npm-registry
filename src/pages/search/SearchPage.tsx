@@ -1,7 +1,10 @@
 import { useLoaderData } from 'react-router-dom'
 
+import { SearchLoaderData } from '@pages/search/searchLoader'
+
 export function SearchPage() {
-  const data = useLoaderData()
+  const data = useLoaderData() as SearchLoaderData
+
   return (
     <div>
       <h1>Search Page</h1>
